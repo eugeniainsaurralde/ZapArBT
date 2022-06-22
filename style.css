@@ -1,0 +1,787 @@
+* {
+  Margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Inter';
+}
+
+html {
+  height: 100%;
+  font-size: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  padding-bottom: 0px;
+  margin-top: 0%;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* CLASES GENERALES */
+.botones_violetas {
+  margin: 0.625rem;
+  padding: 0.938rem;
+  background: #8C30F5;
+  border-radius: 6px;
+  border-color: #8C30F5;
+}
+
+.link-a-boton {
+  text-decoration: none;
+  outline: none;
+  color: white;
+}
+
+.sombra {
+  border-radius: 8px;
+  box-shadow: 0 9px 9px 0 rgba(0, 0, 0, 0.15);
+}
+
+.margin_bottom {
+  margin-bottom: 6%;
+}
+
+/* Titulos, subtitulos y parrafos*/
+.menu_header_text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.938rem;
+  line-height: 1.25rem;
+  color: #18191F;
+  text-align: center;
+}
+
+h1 {
+  /* width: 540px;
+  height: 196px; */
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 6.25rem;
+  line-height: 6.87rem;
+  color: #102336;
+}
+
+h2 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 3.125rem;
+  color: #102336;
+}
+
+.margin_bottom_h2 {
+  margin-bottom: 4%;
+}
+
+h4 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: center;
+}
+
+sub {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  color: #102336;
+}
+
+strong {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.75rem;
+  line-height: 2.5rem;
+  text-align: center;
+  color: #18191F;
+}
+
+p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+
+.label_medium {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #FFFFFF;
+}
+
+.label_large {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.063rem;
+}
+
+.text_quienesSomos_carrito {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+/* estilos texto formularios */
+.form_label_texto {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #840032;
+}
+
+.label_formulario_botones {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 2rem;
+  text-align: center;
+  color: white;
+}
+
+.encabezado_texto {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.188rem;
+  line-height: 2rem;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+/* .doble_linea {
+  display: block;
+  text-align: center;
+  line-height: 20px;
+} */
+
+/*Organizacion de secciones*/
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+/* MENU */
+header {
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  height: min-content;
+  z-index: 5;
+}
+
+.nav {
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* header logo */
+.logo_header {
+  width: 13%;
+  line-height: 0%;
+}
+
+.logo_header img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* header menu */
+.menu_header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu_header li a {
+  width: min-content;
+  padding: 1rem;
+}
+
+/* header botones */
+.botones_header {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.text {
+  margin: 0px;
+  padding: 0px;
+}
+
+.btn_hmg, .btn_hmg_input, .fa-cart-shopping, .fa-user {
+  display: none;
+}
+
+
+/* INICIO */
+#Inicio {
+  display: flex;
+  width: 100vw;
+  height: 86vh;
+  align-items: center;
+
+  margin-left: 3%;
+}
+
+/* Encabezados */
+.encabezados {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  justify-content: center;
+}
+
+.encabezados h1, sub {
+  width: 100%;
+  margin-bottom: 4%;
+}
+
+.encabezados button {
+  width: 25%;
+  margin: 0%;
+}
+
+/* Imagenes de portada */
+.imagenes_portada {
+  background-color: #840032ff;
+  height: 100%;
+  max-width: 48%;
+  border-radius: 50%;
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-areas:
+    "img_1 img_1 . . . ."
+    "img_1 img_1 . . . ."
+    "img_1 img_1 .  img_2 img_2 img_2"
+    ". . . img_2 img_2 img_2"
+    ". . . img_2 img_2 img_2"
+    "img_3 img_3 . img_2 img_2 img_2"
+    "img_3 img_3 . . . ."
+    "img_3 img_3 . . . .  "
+}
+
+.imagenes_portada img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+}
+
+#img_1 {
+  grid-area: img_1;
+}
+
+#img_2 {
+  grid-area: img_2;
+}
+
+#img_3 {
+  grid-area: img_3;
+}
+
+
+/* ¿QUIENES SOMOS? */
+#QuienesSomos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "encabezado_1 comienzos ."
+    "encabezado_1 . objetivos"
+    "encabezado_1 historia .";
+  align-items: center;
+}
+
+/* encabezado */
+.encabezado_1 {
+  grid-area: encabezado_1;
+  background-color: #840032;
+  height: 100%;
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  border-radius: 50px;
+  padding: 4%;
+}
+
+.encabezado_1 h2 {
+  text-align: center;
+  padding-bottom: 6%;
+}
+
+.encabezado_1 img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 11%;
+}
+
+/* cuadritos de texto */
+.cuadros_texto {
+  background-color: #e59500ff;
+  color: #FFFFFF;
+  height: min-content;
+  padding: 5%;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.cuadros_texto h4 {
+  margin-bottom: 3%;
+}
+
+.nuestros_comienzos {
+  grid-area: comienzos;
+}
+
+.nuestros_objetivos {
+  grid-area: objetivos;
+  background-color: #102336;
+}
+
+.nuestra_historia {
+  grid-area: historia;
+}
+
+
+/* MODELOS DISPONIBLES */
+/* posicionamiento de imagenes */
+.galeria {
+  display: grid;
+  grid-template-areas:
+    "img5 img2 img2"
+    "img5 img1 img6"
+    "img8 img1 img6"
+    "img4 img4 img6"
+    "img4 img4 img3"
+    "img4 img4 img7";
+  column-gap: 1%;
+  row-gap: 1%;
+  align-items: center;
+}
+
+.galeria img {
+  max-width: 100%;
+  max-height: 100%;
+  justify-self: center;
+}
+
+.img1 {
+  grid-area: img1;
+  height: 100%;
+}
+
+.img2 {
+  grid-area: img2;
+}
+
+.img3 {
+  grid-area: img3;
+}
+
+.img4 {
+  grid-area: img4;
+}
+
+.img5 {
+  grid-area: img5;
+}
+
+.img6 {
+  grid-area: img6;
+  height: 100%;
+}
+
+.img7 {
+  grid-area: img7;
+}
+
+.img8 {
+  grid-area: img8;
+}
+
+
+/* REFERENCIAS DE CLIENTES */
+/* titulo */
+.encabezado_2 {
+  text-align: center;
+
+}
+
+.encabezado_2 h2 {
+  margin-bottom: 1%;
+}
+
+/*refes */
+
+.referencias_por_separado {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.testimonios {
+  background-color: #e59500ff;
+  text-align: center;
+}
+
+.azul {
+  background-color: #102336ff;
+  color: #FFFFFF;
+}
+
+.triangulo {
+  width: 2%;
+  height: 0;
+  border-top: 2rem solid #e59500ff;
+  border-left: 1.2rem solid transparent;
+  border-right: 1.2rem solid transparent;
+}
+
+.triangulo_azul {
+  width: 0;
+  height: 0;
+  border-top: 2rem solid #102336ff;
+  border-left: 1.2rem solid transparent;
+  border-right: 1.2rem solid transparent;
+}
+
+/* informacion de los clientes */
+.cliente {
+  margin: 2%;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.cliente_foto {
+  max-width: 25%;
+  max-height: 25%;
+  border-radius: 50%;
+}
+
+/* PREGUNTAS FRECUENTES */
+#PreguntasFrecuentes {
+  text-align: center;
+}
+
+
+.preguntas {
+  margin: 1%;
+  background-color: #840032;
+  color: #FFFFFF;
+}
+
+/* boton  */
+#PreguntasFrecuentes button {
+  border: #102336 solid 5px;
+  margin-top: 2%;
+  padding: 1.5%;
+}
+
+#PreguntasFrecuentes button a {
+  color: #102336ff;
+}
+
+/* CONTACTANOS */
+#Contactanos {
+  text-align: center;
+  height: 80vh;
+}
+
+#Contactanos h2 {
+  margin-bottom: 1%;
+}
+
+.contactanos {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.contactanos_1 {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  height: 60%;
+  width: 35%;
+  background: rgba(214, 143, 214, 0.7);
+
+  z-index: 2;
+}
+
+.circulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  /* min-width: 30%;
+  height: 100%;*/
+  border-radius: 50%;
+  height: 100%;
+  width: 45%;
+  background-color: #840032;
+
+  position: absolute;
+  z-index: 1;
+}
+
+.circulo a {
+  width: 20%;
+  height: 20%;
+}
+
+.circulo img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: #FFFFFF;
+
+  z-index: 2;
+}
+
+footer img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+}
+
+.footer_links {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 9%;
+}
+
+.footer_links li a {
+  width: 5%;
+}
+
+footer a {
+  width: 7%;
+  margin-top: 0.5%;
+  margin-left: 3%;
+}
+
+@media screen and (max-width: 425px) {
+
+  /* CLASES GENERICAS */
+  html {
+    font-size: 60%;
+  }
+
+  .label_medium {
+    font-size: 100%;
+  }
+
+  h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .footer {
+    font-size: 0.5rem;
+  }
+
+  strong {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  /* MENU */
+
+  /*   boton hamburguese */
+  .hmg_header {
+    z-index: 5;
+  }
+
+  .btn_hmg {
+    display: block;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #102336;
+    margin-left: 1%;
+  }
+
+  /*   logo */
+  .logo_header {
+    height: 10%;
+    width: 30%;
+    margin-left: 40px;
+
+    z-index: 5;
+  }
+
+  .logo_header a img {
+    border-radius: 50%;
+  }
+
+  /* botones sesion y carrito */
+  .fa-cart-shopping, .fa-user {
+    display: block;
+  }
+
+  .text {
+    display: none;
+  }
+
+  /*   lista menu */
+  .menu_header {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 0;
+
+    /*   fondo */
+    background: #840033;
+    opacity: 0.9;
+
+    /*     transicion */
+    clip-path: circle(0 at center);
+    transition: clip-path 1s ease-in-out;
+  }
+
+  .menu_header li a {
+    /*  tipografia */
+    font-weight: 600;
+    font-size: 1.9rem;
+    line-height: 4rem;
+    color: white;
+    text-align: center;
+  }
+
+  .botones_header {
+    z-index: 5;
+  }
+
+  .btn_hmg_input:checked+.menu_header {
+    clip-path: circle(100% at center);
+  }
+
+  /* INICIO */
+  /* encabezados */
+  .encabezados button {
+    width: 50%;
+  }
+
+  .imagenes_portada {
+    max-width: 70%;
+    max-height: 60%;
+    grid-template-areas:
+      "img_1 img_1 img_1 . . ."
+      "img_1 img_1 img_1 . . ."
+      "img_1 img_1 img_2 img_2 img_2 img_2"
+      ". . img_2 img_2 img_2 img_2"
+      ". . img_2 img_2 img_2 img_2"
+      "img_3 img_3 . . . ."
+      "img_3 img_3 . . . ."
+      "img_3 img_3 . . . ."
+  }
+
+  /* QUINES SOMOS */
+  #QuienesSomos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+      "encabezado_1 comienzos"
+      "encabezado_1 objetivos"
+      "historia historia";
+    row-gap: 1.5%;
+  }
+
+  .encabezado_1 {
+    justify-content: center;
+    max-height: min-content;
+    padding: 4%;
+  }
+
+  /* REFERENCIAS DE CLIENTES */
+
+  /* PREGUNTAS FRECUENTES */
+  .preguntas {
+    justify-content: space-evenly;
+  }
+
+  .preguntas div {
+    width: 40%;
+  }
+
+  /* CONTACTANOS */
+  #Contactanos {
+    height: 100%;
+  }
+
+  .contactanos_1 {
+    width: 40%;
+  }
+
+  .circulo {
+    max-height: 100%;
+    max-width: 50%;
+    min-width: 40%
+  }
+}
