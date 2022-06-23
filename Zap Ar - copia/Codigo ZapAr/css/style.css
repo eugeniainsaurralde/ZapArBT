@@ -253,7 +253,7 @@ header {
   width: 100vw;
   height: 86vh;
   align-items: center;
-  justify-content: space-between;
+
   margin-left: 3%;
 }
 
@@ -282,7 +282,7 @@ header {
   height: 100%;
   max-width: 48%;
   border-radius: 50%;
-  margin-right: -60px;
+
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(8, 1fr);
@@ -450,28 +450,13 @@ header {
 }
 
 /*refes */
-.todas_las_referencias {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-}
-
-.referencias_por_separado {
-  width: 30%;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-}
-
 .testimonios {
   background-color: #e59500ff;
   text-align: center;
-  padding: 8%;
 }
 
 .azul {
   background-color: #102336ff;
-  color: #FFFFFF;
 }
 
 .triangulo {
@@ -502,8 +487,6 @@ header {
 
 .cliente_foto {
   max-width: 25%;
-  max-height: 25%;
-  border-radius: 50%;
 }
 
 /* PREGUNTAS FRECUENTES */
@@ -511,17 +494,9 @@ header {
   text-align: center;
 }
 
-.preguntas {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
 
-.preguntas div {
-  width: 30%;
-  margin: 1%;
-  padding: 2%;
+.preguntas {
+
   background-color: #840032;
   color: #FFFFFF;
 }
@@ -549,17 +524,10 @@ header {
 
 .contactanos {
   position: relative;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  align-items: center;
   height: 100%;
 }
 
 .contactanos_1 {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-around;
   height: 60%;
   width: 35%;
   background: rgba(214, 143, 214, 0.7);
@@ -572,8 +540,6 @@ header {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  /* min-width: 30%;
-  height: 100%;*/
   border-radius: 50%;
   height: 100%;
   width: 45%;
@@ -630,7 +596,7 @@ footer a {
   margin-left: 3%;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
 
   /* CLASES GENERICAS */
   html {
@@ -775,6 +741,9 @@ footer a {
   }
 
   /* REFERENCIAS DE CLIENTES */
+  .cliente_foto {
+    max-width: 15%;
+  }
 
   /* PREGUNTAS FRECUENTES */
   .preguntas {
