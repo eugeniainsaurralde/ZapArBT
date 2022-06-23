@@ -28,7 +28,7 @@
 
 <body>
     <header>
-        <nav class="nav">
+         <nav class="nav">
             <div class="hmg_header">
                 <label for="check" class="btn_hmg">
                     <i class="fa-solid fa-bars"></i>
@@ -56,7 +56,7 @@
                         class="link-a-boton label_medium"><i class="fa-solid fa-user"></i><p class="text"> Iniciar
                             Sesion</p></a></button>
             </div>
-        </nav>
+        </nav> 
     </header>
 
    
@@ -119,61 +119,66 @@
                 <h2>Referencias de nuestros clientes</h2>
                 <sub>¡Tambien podes pasar por nuestras redes!</sub>
             </div>
-            <div class="todas_las_referencias">
-                <div class="referencias_por_separado">
-                    <div class="testimonios sombra">
-                        <p> El pedido llego más que bien, hice una compra surtida mayorista bastante grande y tenía miedo de que los colores o talles vengan mal, pero no, todo lo contrario, todo bien enumerado, organizado y separado. También tienen muy buenos precios. Mas que conforme, muchas gracias!!!
-                        </p>
-                    </div>
-                    <div class="triangulo"></div>
-                    <span class="cliente">Carlos Medina</span>
-                    <img src="Imagenes/cliente_1.jpg" alt="cliente 1" class="cliente_foto">                 
-                </div>
-                <div class="referencias_por_separado">
-                    <div class="testimonios azul sombra">
-                        <p> Llego todo perfecto, pedí varios pares de zapas para que mis hijos comiencen las clases, llego todo a tiempo para que las estrenen su primer día. Además, a diferencia de otros tipos de zapatillas estas no les hicieron doler para nada y se amoldaron súper bien.
-                        </p>
-                    </div>
-                    <div class="triangulo_azul"></div>
-                    <span class="cliente">Juan Albares</span>
-                    <img src="Imagenes/cliente_2.jpg" alt="cliente 2" class="cliente_foto">
-                </div>
-                <div class="referencias_por_separado">
-                    <div class="testimonios sombra">
-                        <p> Compre vía web dos pares de zapatillas, con punto de encuentro en Constitución, la chica fue súper amable y puntual, además me dejo probármelas en su auto para ver que el talle vaya bien. Ya las vengo usando varios días y la verdad que fue una muuuy buena compra.
-                        </p>
-                    </div>
-                    <div class="triangulo"></div>                
-                    <span class="cliente">Lucia Rodriguez</span>
-                    <img src="Imagenes/cliente_3.jpg" alt="cliente 3" class="cliente_foto">
+            <div class="container">
+                <div class="row align-items-start">
+                  <div class="col-md-4 col-sm-12 d-flex flex-column d-flex align-items-center">
+                        <div class="testimonios p-4 sombra">
+                            <p> El pedido llego más que bien, hice una compra surtida mayorista bastante grande y tenía miedo de que los colores o talles vengan mal, pero no, todo lo contrario, todo bien enumerado, organizado y separado. También tienen muy buenos precios. Mas que conforme, muchas gracias!!!
+                            </p>
+                        </div>
+                        <div class="triangulo"></div>
+                        <span class="cliente">Carlos Medina</span>
+                        <img src="Imagenes/cliente_1.jpg" alt="cliente 1" class="rounded-circle cliente_foto">   
+                  </div>
+                  <div class="col-md-4 col-sm-12 d-flex flex-column d-flex align-items-center">
+                        <div class="testimonios azul  p-4 sombra text-light">
+                            <p> Llego todo perfecto, pedí varios pares de zapas para que mis hijos comiencen las clases, llego todo a tiempo para que las estrenen su primer día. Además, a diferencia de otros tipos de zapatillas estas no les hicieron doler para nada y se amoldaron súper bien.
+                            </p>
+                        </div>
+                        <div class="triangulo_azul"></div>
+                        <span class="cliente">Juan Albares</span>
+                        <img src="Imagenes/cliente_2.jpg" alt="cliente 2" class="rounded-circle cliente_foto">
+                  </div>
+                  <div class="col-md-4 col-sm-12 d-flex flex-column d-flex align-items-center">
+                        <div class="testimonios  p-4 sombra">
+                            <p> Compre vía web dos pares de zapatillas, con punto de encuentro en la estacion Constitución, la chica fue súper amable y puntual, además me dejo probármelas en su auto para ver que el talle vaya bien. Ya las vengo usando varios días y la verdad que fue una muuuy buena compra.
+                            </p>
+                        </div>
+                        <div class="triangulo"></div>                
+                        <span class="cliente">Lucia Rodriguez</span>
+                        <img src="Imagenes/cliente_3.jpg" alt="cliente 3" class="rounded-circle cliente_foto">
+                  </div>
                 </div>
             </div>
         </section>
 
         <section id="PreguntasFrecuentes" class="margin_bottom">
             <h2 class="margin_bottom_h2">Preguntas frecuentes</h2>
-            <div class="preguntas">
-                <div class="sombra">
-                    <h4>Formas de envio</h4>
-                    <p>Podemos enviarte tu pedido a través de varios medios: OCA, moto mensajería, correo argentino, podes venirlo a buscar a nuestra fábrica o también podés retirarlo en alguno de nuestros puntos de encuentro.</p>
+            <div class="container ">
+                <div class="row  gap-4 align-items-center d-flex align-items-stretch ">
+                    <div class="col-md-5 col-sm-12  preguntas p-4 m-4 sombra ">
+                        <h4>Formas de envio</h4>
+                        <p>Podemos enviarte tu pedido a través de varios medios: OCA, moto mensajería, correo argentino, podes venirlo a buscar a nuestra fábrica o también podés retirarlo en alguno de nuestros puntos de encuentro.</p>
+                    </div>
+                    <div class="col-md-5 col-sm-12 preguntas p-4 m-4 sombra">
+                        <h4>Puntos de encuentro</h4>
+                        <p>Siempre que sea un pedido con un valor menor a $5000 podes retirarlo en: 
+                          <ul>
+                            <li>Constitucion</li>
+                            <li>Banfield</li>
+                            <li>Lomas de Zamora</li>
+                            <li>Temperley</li>
+                          </ul>
+                        </p>
+                    </div>
                 </div>
-                <div class="sombra">
-                  <h4>Puntos de encuentro</h4>
-                  <p>Siempre que sea un pedido con un valor menor a $5000 podes retirarlo en: 
-                    <ul>
-                      <li>Constitucion</li>
-                      <li>Banfield</li>
-                      <li>Lomas de Zamora</li>
-                      <li>Temperley</li>
-                    </ul>
-                  </p>
-                </div>
-                <div class="sombra">
-                    <h4>Venta mayorista</h4>
-                    <p>Somos vendedores mayoristas. Para acceder a este precio tenes que comprar mínimo una curva de talles, ya sea de adulto o de niño. Dicha curva puede ser surtida tanto en color como en modelos.</p>
-                </div> 
-                <div class="sombra">
-                    <h4>Metodos de pago</h4>
+                <div class="row  gap-4 align-items-center d-flex align-items-stretch">
+                    <div class="col-md-5 col-sm-12 preguntas p-4 m-4 sombra">
+                        <h4>Venta mayorista</h4>
+                        <p>Somos vendedores mayoristas. Para acceder a este precio tenes que comprar mínimo una curva de talles, ya sea de adulto o de niño. Dicha curva puede ser surtida tanto en color como en modelos.</p>
+                    </div>
+                    <div class="col-md-5 col-sm-12 preguntas p-4 m-4 sombra">
+                        <h4>Metodos de pago</h4>
                     <p>Podes abonar tu pedido de muchas formas:
                       <ul>
                         <li>Efectivo</li>
@@ -183,26 +188,16 @@
                         <li>Transferencia por Rapipago</li>
                       </ul>
                     </p>
+                    </div>
                 </div>
-                <div class="sombra">
-                    <h4>Talles</h4>
-                    <p>Contamos con amplia variedad de talles. Todos nuestros modelos son unisex.<br>
-                    Para adultos: del 35 al 42. <br>
-                    Para niños: del 16 al 34.
-                  </p>
-                </div>
-                <div class="sombra">
-                  <h4>Modelos disponibles</h4>
-                  <p>Tenemos muchos modelos para ofrecerte, todos son Vans y Converse originales importadas, hay gran variedad de combinaciones en cuanto a colores y también tenemos las versiones clásicas o con plataforma.</p>
-               </div>
             </div>
             <button><a href="pages/Preguntas_frecuentes.html" class="label_large link-a-boton">Explore all --> </a></button>
         </section>
 
-        <section id="Contactanos" class="margin_bottom">
+        <section id="Contactanos" class="margin_bottom ">
             <h2>¡Contactanos!</h2>
-            <div class="contactanos">
-                <div class="contactanos_1 sombra">
+            <div class="d-flex flex-row flex-nowrap  justify-content-around align-items-center contactanos">
+                <div class="d-flex flex-column flex-nowrap  justify-content-around sombra contactanos_1">
                     <strong>¡Nos podes enviar cualquier duda o sugerencia!</strong>
                     <button class="botones_violetas sombra"><a href="pages/consultas.html"
                             class="link-a-boton label_large">Comunicate con nosotros</a></button>
@@ -213,7 +208,7 @@
                             alt="logo de instagram"></a>
 
                 </div>
-                <div class="contactanos_1 sombra">
+                <div class="d-flex flex-column flex-nowrap  justify-content-around sombra contactanos_1 sombra">
                     <strong>¡Averigua como convertirte en revendedor!</strong>
                     <button class="botones_violetas sombra"><a href="pages/vendedores_mayoristas.html"
                             class="link-a-boton label_large">Contactate con los vendedores mayoristas</a></button>
