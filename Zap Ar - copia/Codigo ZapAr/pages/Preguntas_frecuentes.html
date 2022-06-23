@@ -18,6 +18,8 @@
     <script src="https://kit.fontawesome.com/0671e501c7.js" crossorigin="anonymous"></script>
     <!-- insertar paginas -->
     <link rel="stylesheet" href="../css/style.css" />
+      <!-- CSS only -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">    
     <!--  seo -->
     <meta name="description" content="Podes despejar tus dudas con las preguntas de otros clientes y además conocer sus experiencias, si aun así tenes alguna otra consulta nos la podes enviar.">
     <meta name="keywords" content="zapatillas, asesoramiento, consultas, preguntas, experiencias, envios, pagos, mayoristas, plazos">
@@ -58,102 +60,198 @@
     </nav>
   </header>
 
-  <section id="PreguntasFrecuentes" class="margin_bottom">
+  <section id="PreguntasFrecuentes" class="m-5">
       <h2 class="margin_bottom_h2">Preguntas Frecuentes</h2>
 
-      <div class="preguntas">
-          <div class="sombra">
-              <h4>Formas de envio</h4>
-              <p>Podemos enviarte tu pedido a través de varios medios: OCA, moto mensajería, correo argentino, podes venirlo 
-                a buscar a nuestra fábrica o también podés retirarlo en alguno de nuestros puntos de encuentro.
-              </p>
-          </div>
-          <div class="sombra">
-            <h4>Puntos de encuentro</h4>
-            <p>Siempre que sea un pedido con un valor menor a $5000 podes retirarlo en: 
-              <ul>
-                <li>Constitucion</li>
-                <li>Banfield</li>
-                <li>Lomas de Zamora</li>
-                <li>Temperley</li>
-              </ul>
-            </p>
-          </div>
-          <div class="sombra">
-            <h4>Precios de envios</h4>
-            <p>OCA y Correo argentino tienen sus montos ya preestablecidos, podes consultaros en sus respectivas paginas o en el 
-              link que te enviaremos finalizada la compra.
-              Las entregas en los puntos de encuentro, o si pasas a buscarlo por la fábrica no tienen costo. Y moto mensajería 
-              tiene un monto fijo de $1000 en CABA y $150 extra por cada KM en el Gran Bs As.
-            </p>
-          </div>
-          <div class="sombra">
-            <h4>Metodos de pago</h4>
-            <p>Podes abonar tu pedido de muchas formas:
-              <ul>
-                <li>Efectivo</li>
-                <li>Mercado pago</li>
-                <li>Transferencia</li>
-                <li>Tarjeta de credito</li>
-                <li>Transferencia por Rapipago</li>
-              </ul>
-            </p>
-          </div>
-          <div class="sombra">
-              <h4>Talles</h4>
-              <p>Contamos con amplia variedad de talles. Todos nuestros modelos son unisex.<br>
-              Para adultos: del 35 al 42. <br>
-              Para niños: del 16 al 34.
-              </p>
-          </div>
-          <div class="sombra">
-            <h4>Modelos disponibles</h4>
-            <p>Tenemos muchos modelos para ofrecerte, todos son Vans y Converse originales importadas, hay gran variedad de combinaciones
-               en cuanto a colores y también tenemos las versiones clásicas o con plataforma.
-            </p>
-          </div>
-          <div class="sombra">
-              <h4>Venta mayorista</h4>
-              <p>Somos vendedores mayoristas. Para acceder a este precio tenes que comprar mínimo una curva de talles, ya sea de adulto o 
-                de niño. Dicha curva puede ser surtida tanto en color como en modelos.
-              </p>
-          </div>         
-          <div class="sombra">
-              <h4>Venta minorista</h4>
-              <p>Podes comprarnos la cantidad de pares que desees, queremos que tengas una experiencia totalmente personalizada y rápida, 
-                por ello si tenes alguna consulta tenes a tu disposición a nuestros vendedores para asesorarte.
-              </p>
-          </div>
-          <div class="sombra">
-            <h4>Descuentos</h4>
-            <p>Tenemos increíbles descuentos para ofrecerte:<br>
-              Para compras minoristas: un 15% si excedes los $7000 y un %20 en tu tercera compra. <br>
-            Para compras mayoristas: un 30% si compras más de 3 veces en el lapso de 30 días, aplica para la última compra.
-            </p>
-          </div>
-          <div class="sombra">
-              <h4>Envio de pedidos minoristas</h4>
-              <p>Desde que terminas tu compra hasta que armamos el pedido tenemos un lapso de 5 días hábiles. Pasado este tiempo,
-                 los pedidos se envían a las empresas distribuidoras los viernes, en caso que elijas pasarlo a buscar por la fábrica podes hacerlo
+     <div class="dos_columnas">
+
+        <div class="columna_1">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+
+            <div class="accordion-item ">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed preguntas_colores" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Formas de envio
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Podemos enviarte tu pedido a través de varios medios: OCA, moto mensajería, correo argentino, podes venirlo 
+                  a buscar a nuestra fábrica o también podés retirarlo en alguno de nuestros puntos de encuentro.</div>
+              </div>
+            </div>
+    
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed  preguntas_colores" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Puntos de encuentro
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Siempre que sea un pedido con un valor menor a $5000 podes retirarlo en: 
+                  <ul>
+                    <li>Constitucion</li>
+                    <li>Banfield</li>
+                    <li>Lomas de Zamora</li>
+                    <li>Temperley</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+    
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed  preguntas_colores" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Precios de envios
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">OCA y Correo argentino tienen sus montos ya preestablecidos, podes consultaros en sus respectivas paginas o en el 
+                  link que te enviaremos finalizada la compra.
+                  Las entregas en los puntos de encuentro, o si pasas a buscarlo por la fábrica no tienen costo. Y moto mensajería 
+                  tiene un monto fijo de $1000 en CABA y $150 extra por cada KM en el Gran Bs As.</div>
+              </div>
+            </div>
+    
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingEleven">
+                <button class="accordion-button collapsed  preguntas_colores" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEleven" aria-expanded="false" aria-controls="flush-collapseEleven">
+                  Envio de pedidos mayoristas
+                </button>
+              </h2>
+              <div id="flush-collapseEleven" class="accordion-collapse collapse" aria-labelledby="flush-headingEleven" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Desde que terminas tu compra hasta que armamos el pedido tenemos un lapso de 10 días hábiles. Pasado este tiempo, los pedidos se 
+                  envían a las empresas distribuidoras los viernes, en caso que elijas pasarlo a buscar por la fábrica podes hacerlo cualquier día de la semana 
+                  de 14 a 18, las entregas en punto de encuentro se coordinan personalizadamente.
+                </div>
+              </div>
+            </div>
+    
+    
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTen">
+                <button class="accordion-button collapsed  preguntas_colores" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+                  Envio de pedidos minoristas
+                </button>
+              </h2>
+              <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingTen" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Desde que terminas tu compra hasta que armamos el pedido tenemos un lapso de 5 días hábiles. Pasado este tiempo,
+                  los pedidos se envían a las empresas distribuidoras los viernes, en caso que elijas pasarlo a buscar por la fábrica podes hacerlo
                   cualquier día de la semana de 14 a 18, las entregas en punto de encuentro se coordinan personalizadamente.
-              </p>
+                  </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingfour">
+                <button class="accordion-button collapsed  preguntas_colores" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapsefour">
+                  Metodos de pago
+                </button>
+              </h2>
+              <div id="flush-collapsefour" class="accordion-collapse collapse" aria-labelledby="flush-headingfour" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Podes abonar tu pedido de muchas formas:
+                  <ul>
+                    <li>Efectivo</li>
+                    <li>Mercado pago</li>
+                    <li>Transferencia</li>
+                    <li>Tarjeta de credito</li>
+                    <li>Transferencia por Rapipago</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div> 
+    
+        </div>
+
+        <div class="columna_2">
+
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingFive">
+                <button class="accordion-button collapsed  preguntas_colores" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                  Talles
+                </button>
+              </h2>
+              <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Contamos con amplia variedad de talles. Todos nuestros modelos son unisex.<br>
+                  Para adultos: del 35 al 42. <br>
+                  Para niños: del 16 al 34.
+                </div>
+              </div>
+            </div>
+    
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingSix">
+                <button class="accordion-button collapsed  preguntas_colores" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                  Modelos disponibles
+                </button>
+              </h2>
+              <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Tenemos muchos modelos para ofrecerte, todos son Vans y Converse originales importadas, hay gran variedad de combinaciones
+                  en cuanto a colores y también tenemos las versiones clásicas o con plataforma.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingNine">
+                <button class="accordion-button collapsed  preguntas_colores" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+                  Descuentos
+                </button>
+              </h2>
+              <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Tenemos increíbles descuentos para ofrecerte:<br>
+                  Para compras minoristas: un 15% si excedes los $7000 y un %20 en tu tercera compra. <br>
+                Para compras mayoristas: un 30% si compras más de 3 veces en el lapso de 30 días, aplica para la última compra.
+              </div>
+              </div>
+            </div>
+    
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingSeven">
+                <button class="accordion-button collapsed  preguntas_colores" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                  Venta mayorista
+                </button>
+              </h2>
+              <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Somos vendedores mayoristas. Para acceder a este precio tenes que comprar mínimo una curva de talles, ya sea de adulto o 
+                  de niño. Dicha curva puede ser surtida tanto en color como en modelos.</div>
+              </div>
+            </div>
+    
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingEight">
+                <button class="accordion-button collapsed  preguntas_colores" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                  Venta minorista
+                </button>
+              </h2>
+              <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Podes comprarnos la cantidad de pares que desees, queremos que tengas una experiencia totalmente personalizada y rápida, 
+                  por ello si tenes alguna consulta tenes a tu disposición a nuestros vendedores para asesorarte.</div>
+              </div>
+            </div>
+    
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwelve">
+                <button class="accordion-button collapsed  preguntas_colores" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwelve" aria-expanded="false" aria-controls="flush-collapseTwelve">
+                  Cambios
+                </button>
+              </h2>
+              <div id="flush-collapseTwelve" class="accordion-collapse collapse" aria-labelledby="flush-headingTwelve" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Si el talle que compraste no te quedo bien, encontraste algún defecto con el calzado o el color que recibiste no es el que pediste no te 
+                  preocupes, tenes 20 días para realizar el cambio. Comunicate con nosotros a través de e-mail con el asunto 'cambios' y coordinamos el retiro
+                  del pedido por tu domicilio (solo aplica a ventas minoristas en CABA, interior del país se debe enviar por OCA).</div>
+              </div>
+            </div>
+
           </div>
-          <div class="sombra">
-              <h4>Envio de pedidos mayoristas</h4>
-              <p>Desde que terminas tu compra hasta que armamos el pedido tenemos un lapso de 10 días hábiles. Pasado este tiempo, los pedidos se 
-                envían a las empresas distribuidoras los viernes, en caso que elijas pasarlo a buscar por la fábrica podes hacerlo cualquier día de la semana 
-                de 14 a 18, las entregas en punto de encuentro se coordinan personalizadamente.
-              </p>
-          </div>
-          <div class="sombra">
-              <h4>Cambios</h4>
-              <p>Si el talle que compraste no te quedo bien, encontraste algún defecto con el calzado o el color que recibiste no es el que pediste no te 
-                preocupes, tenes 20 días para realizar el cambio. Comunicate con nosotros a través de e-mail con el asunto 'cambios' y coordinamos el retiro
-                 del pedido por tu domicilio (solo aplica a ventas minoristas en CABA, interior del país se debe enviar por OCA).
-              </p>
-          </div>
-          <button><a href="consultas.html" class="label_large link-a-boton">¿Tenes otra consulta? Clickea aca </a></button>
-      </div>
+        </div>
+     </div>
+
+     <button><a href="consultas.html" class="label_large link-a-boton">¿Tenes otra consulta? Clickea aca </a></button>
+
   </section>
 
   <footer>
@@ -166,6 +264,8 @@
       </nav>
   </footer>
 
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
 
