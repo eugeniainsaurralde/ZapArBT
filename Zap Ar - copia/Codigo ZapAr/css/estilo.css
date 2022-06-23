@@ -1,14 +1,11 @@
 /* style carrito */
-body {
-  background-color: #102336ff;
-}
-
 body main {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
   width: 100vw;
   margin: 0;
+  background-color: #102336ff;
 }
 
 body main .zapas_unidad {
@@ -79,6 +76,11 @@ body main .zapas_unidad .zapas_descripcion .btn_agregar img {
     width: 40%;
   }
 }
+
+body .carrito_JS_container {
+  height: 100vh;
+}
+
 
 /* style formularios */
 /* consultas y vendedores mayoristas */
@@ -194,4 +196,5 @@ body main .zapas_unidad .zapas_descripcion .btn_agregar img {
     width: 80%;
   }
 }
+
 /*# sourceMappingURL=estilo.css.map */
