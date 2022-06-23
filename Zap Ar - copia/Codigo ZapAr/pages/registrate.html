@@ -19,6 +19,8 @@
     <!-- insertar paginas -->
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/estilo.css">
+     <!-- CSS only -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">    
    <!--  seo -->
     <meta name="description" content="Créate una cuenta en nuestra página para ser el primero en enterarte de las promociones ¡Además obtenes beneficios por cada compra que realizas por este medio!">
     <meta name="keywords" content="zapatillas, ofertas, descuentos, compras, exclusividad, registrarse, promociones, beneficios, novedades">
@@ -67,33 +69,33 @@
             <form>
                 <div class="form_label_flex">
                     <label for="nombre_apellido" class="form_label_texto doble_linea">Nombre y apellido:</label>
-                    <Input type="text"  class="input_style sombra" placeholder="Ingrese su nombre completo" id="nombre_apellido" name="nombre_apellido" required>
+                    <Input type="text"  class="input_style sombra form-control" placeholder="Ingrese su nombre completo" id="nombre_apellido" name="nombre_apellido" required>
                 </div>
                 <div class="form_label_flex">
                     <label for="e-mail" class="form_label_texto">E-mail:</label>
-                    <Input type="email"  class="input_style sombra" placeholder="Ingrese su e-mail" id="e-mail" name="e-mail" required>
+                    <Input type="email"  class="input_style sombra form-control" placeholder="Ingrese su e-mail" id="e-mail" name="e-mail" required>
                 </div>
                 <div class="form_label_flex">
                     <label for="dni" class="form_label_texto">DNI:</label>
-                    <Input type="tel" class="input_style sombra"  placeholder="Ingrese su dni" id="dni" name="dni" required>
+                    <Input type="tel" class="input_style sombra form-control"  placeholder="Ingrese su dni" id="dni" name="dni" required>
                 </div>
                 <div class="form_label_flex">
                     <label for="contraseña" class="form_label_texto">Contraseña:</label>
-                    <Input type="password"  class="input_style sombra" placeholder="Ingrese su contraseña" id="contraseña" name="contraseña" required>
+                    <Input type="password"  class="input_style sombra form-control" placeholder="Ingrese su contraseña" id="contraseña" name="contraseña" required>
                 </div>
                 <div class="form_label_flex">
                     <label for="confirmacion_contraseña" class="form_label_texto doble_linea">Confirmar contraseña:</label>
-                    <Input type="password"  class="input_style sombra" placeholder="Confirme su contraseña" id="confirmacion_contraseña" name="confirmacion_contraseña" required>
+                    <Input type="password"  class="input_style sombra form-control" placeholder="Confirme su contraseña" id="confirmacion_contraseña" name="confirmacion_contraseña" required>
                 </div>
                 <div class="acepta_div">
-                    <div class="acepta_style">
-                        <input class="sombra" type="checkbox" name="acepta" value="1" />
-                        <label for="acepta">Acepto los terminos y condiciones</label>
-                    </div>
-                    <div class="acepta_style">
-                        <input class="sombra" type="checkbox" name="acepta_2" value="1" />
-                        <label for="acepta_2">Acepto recibir e-mail con descuentos y promociones</label>
-                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                        <label class="form-check-label" for="flexSwitchCheckChecked">Acepto los terminos y condiciones</label>
+                      </div>
+                      <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                        <label class="form-check-label" for="flexSwitchCheckChecked">Acepto recibir e-mail con descuentos y promociones</label>
+                      </div>
                 </div>
                 <div class="btn_formulario_flex">
                    <button class="sombra btn_formulario_style label_formulario_botones">Registrarme</button>
@@ -112,6 +114,8 @@
         </nav>
     </footer>
 
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
 
