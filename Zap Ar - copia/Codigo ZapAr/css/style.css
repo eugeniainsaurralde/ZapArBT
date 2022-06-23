@@ -501,6 +501,27 @@ header {
   color: #FFFFFF;
 }
 
+.preguntas_colores {
+  background-color: #840032 !important;
+  color: #FFFFFF !important;
+  border: solid 3px white !important;
+}
+
+.dos_columnas {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  height: 100%;
+}
+
+.columna_1 {
+  width: 50%;
+}
+
+.columna_2 {
+  width: 50%;
+}
+
 /* boton  */
 #PreguntasFrecuentes button {
   border: #102336 solid 5px;
